@@ -1,22 +1,22 @@
 <h1>Vendedores</h1>
 <%= form_with url: root_path, method: :get do |formulario| %>
-<div class="container">
-  <div class="row">
-    <div class="col-9">
-      <div class="row g-3 align-items-center">
-        <div class="col-3">
-          <label for="buscador_vendedor" class="col-form-label">Buscar: </label>
-        </div>
-        <div class="col-9">
-          <input type="text" id="buscador_vendedor" name="buscar_vendedor" class="form-control">
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <div class="row g-3 align-items-center">
+          <div class="col-3">
+            <%= formulario.label :buscar_vendedor,"Consulta de Vendedores:", class: "col-form-label" %>
+          </div>
+          <div class="col-9">
+            <%= formulario.text_field "buscar_vendedor", class: "form-control" %>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-3">
-       <%= button_tag "Realizar Buscar", type: "submit", class: "btn btn-primary" %>
+      <div class="col-3">
+        <%= formulario.submit "Realizar Buscar", type: "submit", class: "btn btn-primary" %>
+      </div>
     </div>
   </div>
-</div>
 <% end %>
 <hr>
 <div class="table-responsive">
