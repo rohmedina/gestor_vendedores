@@ -3,7 +3,11 @@
 #
 # Examples:
 #
+
+#vendedor = Vendedor.create([{numero: :faker.number.int()}, {nombre: :faker.nombre.}])
+# Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-vendedor = vendedor.create([{numero: :faker.number.int()}, {nombre: :faker.nombre.}])
- Character.create(name: "Luke", movie: movies.first)
+25.times do
+  vendedor = Vendedor.create(nombre: Faker::Artist.name, mail: Faker::Internet.email, oficina: "Oficina", manager: "Manager")
+end

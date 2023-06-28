@@ -74,3 +74,5 @@ end
 gem "bootstrap", "~> 5.2"
 
 gem "popper_js", "~> 2.11"
+
+gem "faker", "~> 3.2"
