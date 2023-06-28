@@ -8,6 +8,6 @@ class VendedorController < ApplicationController
   end
 
   def create
-    @vendedores = Vendedor.create(vendedores_params)
+   # @vendedores = Vendedor.create(nombre: params["nombre"], params)
   end
 end

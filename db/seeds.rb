@@ -3,5 +3,7 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+require 'faker'
+
+vendedor = vendedor.create([{numero: :faker.number.int()}, {nombre: :faker.nombre.}])
+ Character.create(name: "Luke", movie: movies.first)
