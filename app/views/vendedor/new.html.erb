@@ -1,2 +1,24 @@
-<h1>Vendedor#new</h1>
-<p>Find me in app/views/vendedor/new.html.erb</p>
+<h1>Vendedores</h1>
+<p>Ingresa un nuevo vendedor</p>
+
+
+<form>
+  <div class="mb-3">
+    <label for="InputName" class="form-label">Nombre </label>
+    <input type="text" class="form-control" id="InputName" aria-describedby="nameHelp">
+  </div>
+  <div class="mb-3">
+    <label for="InputEmail" class="form-label">Email </label>
+    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="Inputoffice" class="form-label">Oficina </label>
+    <input type="text" class="form-control" id="Inputoffice" aria-describedby="officeHelp">
+  </div>
+  <div class="mb-3">
+    <label for="InputManager" class="form-label">Manager</label>
+    <input type="text" class="form-control" id="InputManager" aria-describedby="managerHelp">
+  </div>
+
+  <button type="submit" class="btn btn-primary" id="btn-agregar">agregar</button>
+</form>
