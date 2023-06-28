@@ -9,5 +9,5 @@
 require 'faker'
 
 25.times do
-  vendedor = Vendedor.create(nombre: Faker::Artist.name, mail: Faker::Internet.email, oficina: "Oficina", manager: "Manager")
+  Vendedor.create(nombre: Faker::Artist.name, mail: Faker::Internet.email, oficina: "Oficina", manager: "Manager")
 end

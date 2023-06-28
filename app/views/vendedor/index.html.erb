@@ -18,7 +18,7 @@
 <hr>
 
 <div class="table-responsive">
-    <table class="table table-primary">
+    <table class="table">
         <thead>
              <tr>
                 <th>Numero de empleado</th>
@@ -37,9 +37,7 @@
         <td> <%= vendedor.mail %> </td>
         <td> <%= vendedor.oficina %> </td>
         <td> <%= vendedor.manager %> </td>
-        <td><%= link_to "#", libro %> <button class="btn btn-primary">Ver</button></td>
-        <td><%= link_to "#", edit_vendedor_path(libro) %></td>
-        <td><%= button_to "#", libro, method: :delete %></td>
+        <td><%= link_to "Ver", "#", class: "btn btn-primary" %></td>
         </tr>
     <% end %>
         </tbody>
